@@ -1,0 +1,35 @@
+@import 'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@400;500;600;700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap';
+@import './responsive.scss';
+
+.app{
+    // background-color: lightblue;
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+    
+    max-width: 1752px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+
+    .footer{
+        margin-top: 256px;
+        
+    }
+    
+    @include sm{
+        background-color: red;
+    }
+
+
+
+
+}

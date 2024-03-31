@@ -1,0 +1,34 @@
+// Extra Small Devices (Phones)
+@mixin xs {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+// Small Devices (Tablets)
+@mixin sm {
+    @media (min-width: 577px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+// Medium Devices (Laptops)
+@mixin md {
+    @media (min-width: 769px) and (max-width: 992px) {
+        @content;
+    }
+}
+
+// Large Devices (Desktops)
+@mixin lg {
+    @media (min-width: 993px) and (max-width: 1200px) {
+        @content;
+    }
+}
+
+// Extra Large Devices (Large Desktops)
+@mixin xl {
+    @media (min-width: 1201px) {
+        @content;
+    }
+}
