@@ -1,45 +1,58 @@
 import './projects.scss';
+import '../../fonts.css';
 import { MdNavigateNext } from "react-icons/md";
 import { MdNavigateBefore } from "react-icons/md";
+import ProjectDa from './ProjectDa';
+import { useState } from 'react';
 
-function Projects({projects}) {
+function Projects() {
+    let [num,setNum] = useState(0);
+    console.log(num);
+    let ProjectData = ProjectDa[num];
+
+    const nextClick = ()=>{
+        setNum((prev) => prev === 4 ? 0 : prev + 1);
+    }
+
+    const backClick = () => {
+        setNum((prev) => prev === 0 ? 4 : prev - 1);
+    }
+    
     return (
         <div className="projects">
-            {/* <p>I'm Proficient in MERN stack development with an interest in DevOps, Machine Learning and Game Development</p> */}
+
             <div className='left'>
-                <MdNavigateBefore color='black'/>
+                <MdNavigateBefore color='black' className='navigation-icons' onClick={backClick}/>
 
                 <div className='project-window'>
-                
-                    <div className='left'>
-                        <img src={projects.image} alt={`${projects.title} image`}></img>
+                    <div className='window-left'>
+                        {/* <img src={ProjectData.image} alt={`${ProjectData.title} image`}></img> */}
                     </div>
-
-                    <div className='right'>
-                        <div className='title'>{projects.title}</div>
+                    <div className='window-right'>
+                        <div className='title teko-bold'>{ProjectData.title}</div>
                         <div className='tech'>
                             {
-                                projects.tech.map((techItem,index)=>{
-                                    <div className='tech-item' key={index}>{techItem}</div>
-                                })
+                                ProjectData.tech.map((techItem, index) => (
+                                    <div className='tech-item teko-medium' key={index}>{techItem}</div>
+                                ))
                             }
                         </div>
-                        <div className='description'>
+
+                        <ul className='desc'>
                             {
-                                projects.desc.map((descItem,index)=>{
-                                    <div className='desc-item' key={index}>{descItem}</div>
-                                })
+                                ProjectData.desc.map((descItem,index)=>(
+                                    <li className='desc-item teko-light' key={index}>{descItem}</li>
+                                ))
                             }
-                        </div>
+                        </ul>
                     </div>
-                
                 </div>
                 
-                <MdNavigateNext color='black'/>
+                <MdNavigateNext color='black' className='navigation-icons' onClick={nextClick}/>
             </div>
             
+
             <div className='right'>
-                {/* <p>Skills</p> */}
                 P R O J E C T S
             </div>
             

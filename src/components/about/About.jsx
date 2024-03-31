@@ -13,7 +13,7 @@ function About() {
                     workflow optimization.
                 </p>
                 <p>
-                    Please feel free to drop me a mail if you'd like to collaborate with me!
+                    Please feel free to drop a mail if you'd like to collaborate with me!
                 </p>
             </div>
             <div className='right'>

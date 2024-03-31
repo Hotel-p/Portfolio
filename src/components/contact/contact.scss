@@ -1,0 +1,55 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    margin-bottom: 64px;
+
+    .title{
+        font-size: 48px;
+    }
+}
+
+.contact-form{
+    border: 2px solid black;
+    padding: 36px;
+    // max-width: 768px;
+    min-width: 512px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    .form-item{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        input{
+            padding: 12px;
+            border: none;
+            border-bottom: 1.2px solid black;
+        }
+
+        textarea{
+            padding: 16px;
+            font-size: 24px;
+            height: 144px;
+        }
+    }
+
+    button{
+        margin-left: auto;
+        margin-right: auto;
+        
+        padding: 16px;
+        font-size: 24px;
+
+        background-color: white;
+
+        &:hover{
+            background-color: palegoldenrod;
+            scale: 1.05;
+        }
+    }
+}

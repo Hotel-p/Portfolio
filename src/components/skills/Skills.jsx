@@ -1,5 +1,19 @@
 import './skills.scss';
 
+import { FaJava } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa6";
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiReactjsFill } from "react-icons/ri";
+import { DiNodejs } from "react-icons/di";
+import { SiExpress } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
+import { FaJenkins } from "react-icons/fa";
+import { SiKubernetes } from "react-icons/si";
+import { FaLinux } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa6";
+import { SiPowerbi } from "react-icons/si";
+
 function Skills() {
     return (
         <div className="skills">  
@@ -12,31 +26,31 @@ function Skills() {
                 <div className='skill'>
                     <div className='title teko-bold'>Web-Dev</div>
                     <div className='skill-grid'>
-                        <div className='skill-grid-item'>HTML</div>
-                        <div className='skill-grid-item'>CSS</div>
-                        <div className='skill-grid-item'>JS</div>
-                        <div className='skill-grid-item'>ReactJs</div>
-                        <div className='skill-grid-item'>NodeJs</div>
-                        <div className='skill-grid-item'>ExpressJs</div>
+                        <div className='skill-grid-item'><p>HTML</p> <div className='skill-grid-item-img'><FaHtml5/></div></div>
+                        <div className='skill-grid-item'><p>CSS</p> <div className='skill-grid-item-img'><FaCss3Alt /></div></div>
+                        <div className='skill-grid-item'><p>JS</p> <div className='skill-grid-item-img'><IoLogoJavascript /></div></div>
+                        <div className='skill-grid-item'><p>ReactJs</p> <div className='skill-grid-item-img'><RiReactjsFill /></div></div>
+                        <div className='skill-grid-item'><p>NodeJs</p> <div className='skill-grid-item-img'><DiNodejs /></div></div>
+                        <div className='skill-grid-item'><p>ExpressJs</p> <div className='skill-grid-item-img'><SiExpress /></div></div>
                     </div>
                 </div>
 
                 <div className='skill'>
                     <div className='title teko-bold'>DevOps</div>
                     <div className='skill-grid'>
-                        <div className='skill-grid-item'>Docker</div>
-                        <div className='skill-grid-item'>Jenkins</div>
-                        <div className='skill-grid-item'>Kubernetes</div>
-                        <div className='skill-grid-item'>Linux</div>
+                        <div className='skill-grid-item'><p>Docker</p> <div className='skill-grid-item-img'><FaDocker /></div></div>
+                        <div className='skill-grid-item'><p>Jenkins</p> <div className='skill-grid-item-img'><FaJenkins color='red'/></div></div>
+                        <div className='skill-grid-item'><p>Kubernetes</p> <div className='skill-grid-item-img'><SiKubernetes /></div></div>
+                        <div className='skill-grid-item'><p>Linux</p> <div className='skill-grid-item-img'></div><FaLinux /></div>
                     </div>
                 </div>
 
                 <div className='skill'>
-                    <div className='title teko-bold'>Miscellanous</div>
+                    <div className='title teko-bold'>Miscellaneous</div>
                     <div className='skill-grid'>
-                        <div className='skill-grid-item'>Git</div>
-                        <div className='skill-grid-item'>PowerBI</div>
-                        <div className='skill-grid-item'>Java</div>
+                        <div className='skill-grid-item'><p>Git</p> <div className='skill-grid-item-img'><FaGitAlt /></div></div>
+                        <div className='skill-grid-item'><p>PowerBI</p> <div className='skill-grid-item-img'><SiPowerbi /></div></div>
+                        <div className='skill-grid-item'><p>Java</p> <div className='skill-grid-item-img'><FaJava /></div></div>
                     </div>
                 </div>
                 

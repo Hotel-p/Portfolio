@@ -1,4 +1,7 @@
 import './navbar.scss';
+import { CiLight } from "react-icons/ci";
+import { MdDarkMode } from "react-icons/md";
+import { SiGithub } from "react-icons/si";
 
 function Navbar() {
     return (
@@ -12,10 +15,17 @@ function Navbar() {
                     Skills
                 </div>
                 <div className='options'>
-                    About
+                    Projects
                 </div>
-                <div className='options'>
+                <a className='options' href='#contact'>
                     Contact
+                </a>
+                <div className='options git'>
+                    <SiGithub />
+                </div>
+                <div className='options darkmode'>
+                    {/* <CiLight /> */}
+                    <MdDarkMode />
                 </div>
             </div>
         </div>
