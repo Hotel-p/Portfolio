@@ -25,17 +25,21 @@
         flex-direction: column;
         gap: 12px;
 
+        
+
         input{
             padding: 12px;
             border: none;
             border-bottom: 1.2px solid black;
-            font-size: 24px;
+            font-size: 18px;
+            // font-weight: 500;
         }
 
         textarea{
             padding: 16px;
-            font-size: 24px;
             height: 96px;
+            font-size: 18px;
+            // font-weight: 500;
         }
     }
 

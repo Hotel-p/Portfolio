@@ -26,6 +26,11 @@ function Projects() {
 
                 <div className='project-window'>
                     <div className='window-left'>
+                        {
+                            ProjectData.image.map((item,index) => (
+                                <img src={item} alt='image-item'></img>
+                            ))    
+                        }
                         {/* <img src={ProjectData.image} alt={`${ProjectData.title} image`}></img> */}
                     </div>
                     <div className='window-right'>

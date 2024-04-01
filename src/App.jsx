@@ -5,8 +5,6 @@ import Navbar from './components/navbar/Navbar';
 import Content from './components/content/Content';
 import Contact from './components/contact/Contact';
 
-import developer from './developer.svg'
-
 function App() {
   return (
     <div className='app'>
