@@ -3,6 +3,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 24px;
 }
 
 .teko-medium {
@@ -10,6 +11,7 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    font-size: 24px;
 }
 
 .teko-bold {
@@ -17,10 +19,12 @@
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    font-size: 24px;
 }
 
 .babas-nue{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 24px;
 }

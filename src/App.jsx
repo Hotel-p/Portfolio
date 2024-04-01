@@ -5,6 +5,8 @@ import Navbar from './components/navbar/Navbar';
 import Content from './components/content/Content';
 import Contact from './components/contact/Contact';
 
+import developer from './developer.svg'
+
 function App() {
   return (
     <div className='app'>
@@ -17,10 +19,6 @@ function App() {
       <div id='contact'>
         <Contact /> 
       </div>
-      
-      {/* <Content />
-      <Contact /> */}
-      {/* <div className='footer'></div> */}
     </div>
   )
 }

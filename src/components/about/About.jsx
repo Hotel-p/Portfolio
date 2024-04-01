@@ -1,6 +1,8 @@
 import './about.scss';
 import '../../fonts.css';
 
+import developer from '../../assets/developer.svg'
+
 function About() {
     return (
         <div className="about teko-light">
@@ -17,7 +19,7 @@ function About() {
                 </p>
             </div>
             <div className='right'>
-                <img src='./developer.svg' alt='About-Section-Image'></img>
+                <img src={developer} alt='About-Section-Image'></img>
             </div>
         </div>
     );

@@ -6,7 +6,7 @@
     align-items: center;
     gap: 20px;
 
-    margin:288px 0px;
+    margin:144px 0px;
 
     .left{
         flex: 1;
@@ -14,7 +14,7 @@
         align-items: center;
         // justify-content: center;
 
-        margin-right: -192px;
+        margin-right: -256px;
 
         gap: 32px;
 
@@ -37,7 +37,7 @@
             position: relative;
 
             .window-left{
-                flex: 2;
+                flex: 3;
                 
                 img{
                     position: absolute;
@@ -47,7 +47,7 @@
             }
 
             .window-right{
-                flex: 3;
+                flex: 2;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -86,14 +86,16 @@
         color: white;
         font-size: 72px;
         padding: 32px;
-    
+
+        margin-left: 72px;
+
         display: flex;
         align-items: center;
         justify-content: center;
         transform: rotate(90deg);
         // writing-mode: vertical-rl;
         height: 32px;
-        width: 576px;
+        width: 432px;
     }
 
 }
