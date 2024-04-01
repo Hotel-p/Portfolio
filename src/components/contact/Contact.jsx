@@ -11,34 +11,23 @@ function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        // emailjs
-        // .sendForm('service', 'template', form.current, {
-        //     publicKey: 'il0Bv6A_4zRXm9opU',
-        // })
-        // .then(
-        //     () => {
-        //     // console.log('SUCCESS!');
-        //         notify('Message Sent!');
-        //     },
-        //     (error) => {
-        //         // console.log('FAILED...', error.text);
-        //         notify('Please try again. Error: ' + error.text)
-        //     },
-        // );
+        emailjs
+        .sendForm('service', 'template', form.current, {
+            publicKey: 'il0Bv6A_4zRXm9opU',
+        })
+        .then(
+            () => {
+            // console.log('SUCCESS!');
+                notify('Message Sent!');
+            },
+            (error) => {
+                // console.log('FAILED...', error.text);
+                notify('Please try again. Error: ' + error.text)
+            },
+        );
     };
     
-    const notify = () => toast("Message Sent!");
-
-    // const default_vals = {
-    //     "background-color"  :   "#00F",
-    //     "border"            :   "5px dashed #F00",
-    //     "color"             :   "#0F0",
-    //     "font-family"       :   "Helvitica",
-    //     "font-size"         :   "30px",
-    //     "toast-pos"         :   "top"
-    // };
-    // set_default(default_vals);
-    // toast("This is the new default Toast.");
+    const notify = (input) => toast(input);
 
     return (
         <div className='contact'>
@@ -59,7 +48,7 @@ function Contact() {
                     <label htmlFor="message">Message:</label>
                     <textarea id="message" name="message" placeholder='Type your message here..' required></textarea>
                 </div>
-                <button type="submit" onClick={notify}>Submit</button>
+                <button type="submit">Submit</button>
                 <ToastContainer
                     position="bottom-right"
                     autoClose={5000}
