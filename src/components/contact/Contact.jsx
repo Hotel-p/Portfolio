@@ -1,7 +1,8 @@
 import './contact.scss';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function Contact() {
@@ -17,13 +18,18 @@ function Contact() {
         })
         .then(
             () => {
-            console.log('SUCCESS!');
+            // console.log('SUCCESS!');
+                notify('Message Sent!');
             },
             (error) => {
-            console.log('FAILED...', error.text);
+                // console.log('FAILED...', error.text);
+                notify('Please try again. Error: ' + error.text)
             },
         );
     };
+
+    
+    const notify = (input) => toast(input);
 
     return (
         <div className='contact'>
@@ -42,9 +48,22 @@ function Contact() {
                 </div>
                 <div className='form-item'>
                     <label htmlFor="message">Message:</label>
-                    <textarea id="message" name="message" placeholder='Hi, would you like to work with us?' required></textarea>
+                    <textarea id="message" name="message" placeholder='Type your message here..' required></textarea>
                 </div>
                 <button type="submit">Submit</button>
+                <ToastContainer
+                    position="bottom-right"
+                    autoClose={5000}
+                    hideProgressBar
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable={false}
+                    pauseOnHover
+                    theme="light"
+                    transition: Bounce
+                />
             </form>
 
         </div>

@@ -14,9 +14,8 @@ function App() {
       <div id='content'>
         <Content /> 
       </div>
-      <div id='contact'>
-        <Contact /> 
-      </div>
+      <div id='contact'></div>
+      <Contact /> 
     </div>
   )
 }

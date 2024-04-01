@@ -11,12 +11,12 @@ function Navbar() {
                 <div className='options'>Prasanna Eklahare</div>
             </div>
             <div className='right'>
-                <div className='options'>
+                <a className='options' href='#skills'>
                     Skills
-                </div>
-                <div className='options'>
+                </a>
+                <a className='options' href='#projects'>
                     Projects
-                </div>
+                </a>
                 <a className='options' href='#contact'>
                     Contact
                 </a>

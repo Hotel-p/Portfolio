@@ -2,6 +2,8 @@ import './about.scss';
 import '../../fonts.css';
 
 import developer from '../../assets/developer.svg'
+import pdf from '../../assets/Prasanna-Eklahare-Resume.pdf';
+
 
 function About() {
     return (
@@ -17,6 +19,7 @@ function About() {
                 <p>
                     Please feel free to drop a mail if you'd like to collaborate with me!
                 </p>
+                <a href={pdf}>View Resume</a>
             </div>
             <div className='right'>
                 <img src={developer} alt='About-Section-Image'></img>

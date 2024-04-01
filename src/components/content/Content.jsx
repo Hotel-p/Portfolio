@@ -6,9 +6,9 @@ import About from '../about/About';
 function Content() {
     return (
         <div className="content">
-            <About />
-            <Skills />
-            <Projects />
+            <div id='about'><About /></div>
+            <div id='skills'><Skills /></div>
+            <div id='projects'><Projects /></div>
         </div>
     );
 }
