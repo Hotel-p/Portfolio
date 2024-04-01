@@ -1,17 +1,34 @@
+@import './responsive.scss';
+
+html{
+    --fontSize: 24px;
+    @include md{
+        --fontSize:20px;
+    }
+    @include sm{
+        --fontSize: 20px;
+    }
+    @include xs{
+        --fontSize: 18px;
+    }
+}
+
+
 .teko-light {
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 24px;
+  font-size: var(--fontSize);
 }
+
 
 .teko-medium {
     font-family: "Teko", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 24px;
+    font-size: var(--fontSize);
 }
 
 .teko-bold {
@@ -19,12 +36,13 @@
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 24px;
+    font-size: var(--fontSize);
 }
 
 .babas-nue{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 24px;
+    font-size: var(--fontSize);
 }
+

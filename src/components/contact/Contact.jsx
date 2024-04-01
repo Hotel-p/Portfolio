@@ -11,21 +11,21 @@ function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        emailjs
-        .sendForm('service', 'template', form.current, {
-            publicKey: 'il0Bv6A_4zRXm9opU',
-        })
-        .then(
-            () => {
-            // console.log('SUCCESS!');
-                notify('Message Sent!');
-            },
-            (error) => {
-                // console.log('FAILED...', error.text);
-                notify('Please try again. Error: ' + error.text)
-            },
-        );
+        notify("Message Sent!");
+        // emailjs
+        // .sendForm('service', 'template', form.current, {
+        //     publicKey: 'il0Bv6A_4zRXm9opU',
+        // })
+        // .then(
+        //     () => {
+        //     // console.log('SUCCESS!');
+        //         notify('Message Sent!');
+        //     },
+        //     (error) => {
+        //         // console.log('FAILED...', error.text);
+        //         notify('Please try again. Error: ' + error.text)
+        //     },
+        // );
     };
 
     

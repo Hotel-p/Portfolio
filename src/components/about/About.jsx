@@ -1,5 +1,5 @@
 import './about.scss';
-import '../../fonts.css';
+import '../../fonts.scss';
 
 import developer from '../../assets/developer.svg'
 import pdf from '../../assets/Prasanna-Eklahare-Resume.pdf';
@@ -17,7 +17,7 @@ function About() {
                     workflow optimization.
                 </p>
                 <p>
-                    Please feel free to drop a mail if you'd like to collaborate with me!
+                    Please feel free to drop a message in the message box below, if you'd like to collaborate with me!
                 </p>
                 <a href={pdf}>View Resume</a>
             </div>

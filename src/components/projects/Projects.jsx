@@ -1,5 +1,5 @@
 import './projects.scss';
-import '../../fonts.css';
+import '../../fonts.scss';
 import { MdNavigateNext } from "react-icons/md";
 import { MdNavigateBefore } from "react-icons/md";
 import ProjectDa from './ProjectDa';
@@ -28,7 +28,7 @@ function Projects() {
                     <div className='window-left'>
                         {
                             ProjectData.image.map((item,index) => (
-                                <img src={item} alt='image-item'></img>
+                                <img key={index} src={item} alt='image-item'></img>
                             ))    
                         }
                         {/* <img src={ProjectData.image} alt={`${ProjectData.title} image`}></img> */}
@@ -58,7 +58,7 @@ function Projects() {
             
 
             <div className='right'>
-                P R O J E C T S
+                <p>P R O J E C T S</p>
             </div>
             
         </div>

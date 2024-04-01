@@ -1,4 +1,5 @@
 import './skills.scss';
+import '../../fonts.scss';
 
 import { FaJava } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
@@ -7,6 +8,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { RiReactjsFill } from "react-icons/ri";
 import { DiNodejs } from "react-icons/di";
 import { SiExpress } from "react-icons/si";
+import { FaSass } from "react-icons/fa";
 import { FaDocker } from "react-icons/fa";
 import { FaJenkins } from "react-icons/fa";
 import { SiKubernetes } from "react-icons/si";
@@ -14,13 +16,14 @@ import { FaLinux } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa6";
 import { SiPowerbi } from "react-icons/si";
 
+
 function Skills() {
     return (
         <div className="skills">  
             {/* <p>I'm Proficient in MERN stack development with an interest in DevOps, Machine Learning and Game Development</p> */}
             <div className='left'>
                 {/* <p>Skills</p> */}
-                S k i l l s
+                <p>S k i l l s</p>
             </div>
             <div className='right'>
                 <div className='skill'>
@@ -28,6 +31,7 @@ function Skills() {
                     <div className='skill-grid'>
                         <div className='skill-grid-item'><p>HTML</p> <div className='skill-grid-item-img'><FaHtml5/></div></div>
                         <div className='skill-grid-item'><p>CSS</p> <div className='skill-grid-item-img'><FaCss3Alt /></div></div>
+                        <div className='skill-grid-item'><p>SASS</p> <div className='skill-grid-item-img'><FaSass /></div></div>
                         <div className='skill-grid-item'><p>JS</p> <div className='skill-grid-item-img'><IoLogoJavascript /></div></div>
                         <div className='skill-grid-item'><p>ReactJs</p> <div className='skill-grid-item-img'><RiReactjsFill /></div></div>
                         <div className='skill-grid-item'><p>NodeJs</p> <div className='skill-grid-item-img'><DiNodejs /></div></div>

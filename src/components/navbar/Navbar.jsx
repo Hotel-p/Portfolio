@@ -11,18 +11,18 @@ function Navbar() {
                 <div className='options'>Prasanna Eklahare</div>
             </div>
             <div className='right'>
-                <a className='options' href='#skills'>
+                <a className='options hide' href='#skills'>
                     Skills
                 </a>
-                <a className='options' href='#projects'>
+                <a className='options hide' href='#projects'>
                     Projects
                 </a>
-                <a className='options' href='#contact'>
+                <a className='options hide' href='#contact'>
                     Contact
                 </a>
-                <div className='options git'>
+                <a className='options git' href='https://github.com/Hotel-p'>
                     <SiGithub />
-                </div>
+                </a>
                 <div className='options darkmode'>
                     {/* <CiLight /> */}
                     <MdDarkMode />

@@ -1,3 +1,5 @@
+@import '../../responsive.scss';
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -32,6 +34,22 @@
         .git,.darkmode{
             &:hover{
                 scale: 1.25;
+            }
+        }
+    }
+
+    @include sm{
+        font-size: 18px;
+    }
+
+    @include xs{
+        .right{
+            // &:nth-child(1){
+            //     display: none;
+            // }
+            // display: none;
+            .hide{
+                display: none;
             }
         }
     }

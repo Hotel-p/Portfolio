@@ -1,3 +1,5 @@
+@import '../../responsive.scss';
+
 .contact{
     display: flex;
     flex-direction: column;
@@ -8,53 +10,84 @@
     .title{
         font-size: 48px;
     }
-}
 
-.contact-form{
-    border: 2px solid black;
-    padding: 36px;
-    // max-width: 768px;
-    min-width: 384px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-
-    .form-item{
+    .contact-form{
+        border: 2px solid black;
+        padding: 36px;
+        // max-width: 768px;
+        min-width: 384px;
+    
         display: flex;
         flex-direction: column;
-        gap: 12px;
-
-        
-
-        input{
-            padding: 12px;
-            border: none;
-            border-bottom: 1.2px solid black;
-            font-size: 18px;
-            // font-weight: 500;
+        gap: 36px;
+    
+        .form-item{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+    
+            
+    
+            input{
+                padding: 12px;
+                border: none;
+                border-bottom: 1.2px solid black;
+                font-size: 18px;
+                // font-weight: 500;
+            }
+    
+            textarea{
+                padding: 16px;
+                height: 96px;
+                font-size: 18px;
+                // font-weight: 500;
+            }
         }
-
-        textarea{
+    
+        button{
+            margin-left: auto;
+            margin-right: auto;
+            
             padding: 16px;
-            height: 96px;
-            font-size: 18px;
-            // font-weight: 500;
+            font-size: 16px;
+    
+            background-color: white;
+    
+            &:hover{
+                background-color: palegoldenrod;
+                scale: 1.05;
+            }
         }
     }
 
-    button{
-        margin-left: auto;
-        margin-right: auto;
-        
-        padding: 16px;
-        font-size: 16px;
+    @include xs{
+        gap: 18px;
+        .title{
+            font-size: 36px;
+        }
 
-        background-color: white;
+        .contact-form{
+            min-width: 248px;
+            padding: 12px;
+            gap: 18px;
+            
+            .form-item{
+                font-size: 16px;
+                input{
+                    font-size: 12px;
+                }
+                textarea{
+                    font-size: 12px;
+                    height: 48px;
+                }
+            }
 
-        &:hover{
-            background-color: palegoldenrod;
-            scale: 1.05;
+            button{
+                padding: 8px;
+                font-size: 12px;
+            }
         }
     }
+
 }
+

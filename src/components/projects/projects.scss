@@ -1,18 +1,15 @@
+@import './../../responsive.scss';
+
 .projects{
     flex: 1;
-    // width: 100%;
-    // height: 100%;
     display: flex;
     align-items: center;
     gap: 20px;
-
-    margin:144px 0px;
 
     .left{
         flex: 1;
         display: flex;
         align-items: center;
-        // justify-content: center;
 
         margin-right: -256px;
 
@@ -28,13 +25,29 @@
         .project-window{
             flex: 1;
             border: 1px solid black;
-            height: 576px;
+            // height: 576px;
+            height: fit-content;
             padding: 12px;
 
             display: flex;
             gap: 36px;
 
             position: relative;
+            
+            @include md{
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                .window-left{
+                    flex: auto;
+                }
+
+                .window-right{
+                    flex: auto;
+                }
+                
+            }
 
             .window-left{
                 flex: 3;
@@ -47,7 +60,18 @@
                     &:hover{
                         scale: 1.05;
                     }
+
+                    @include md{
+                        &:nth-child(2){
+                            display: none;
+                        }
+                    }
                 }
+
+                @include md{
+                    // flex: auto;
+                }
+
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -79,12 +103,28 @@
                 .desc{
                     display: flex;
                     flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
                     gap: 24px;
+                    margin-top: 18px;
+                    margin-left: 24px;
                 }
 
                 ul{
                     list-style: upper-roman;
                 }
+
+                @include md{
+                    flex: auto;
+                    gap: 18px;
+                    justify-content: flex-start;
+
+                    .desc{
+                        gap: 8px;
+                    }
+                }
+
+            
 
             }
         }
@@ -93,7 +133,7 @@
     .right{
         background-color: red;
         color: white;
-        font-size: 72px;
+        // font-size: 72px;
         padding: 32px;
 
         margin-left: 72px;
@@ -105,6 +145,116 @@
         // writing-mode: vertical-rl;
         height: 32px;
         width: 432px;
+
+        p{
+            font-size: 72px;
+        }
+
+        @include md{
+            margin-right: -144px;
+            p{
+                font-size: 56px;
+            }
+        }
+    }
+
+    @include sm{
+        display: flex;
+        flex-direction: column-reverse;
+        .left{
+            margin: 0px;
+
+            .project-window{
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+
+                height: fit-content;
+                .window-left{
+                    
+                    img{
+                        scale: 0.9;
+                        &:hover{
+                            scale: 0.92;
+                        }
+                        &:nth-child(2){
+                            display: none;
+                        }
+                    }
+                }
+
+                .window-right{
+                    flex: auto;
+                    gap: 16px;
+
+                    .desc{
+                        margin-top: 12px;
+                        margin-left: 24px;
+                        // width: 100%;
+                        // display: flex;
+                        // flex-direction: column;
+                        
+                        // align-items: flex-start;
+                        gap: 12px;
+                    }
+                }
+            }
+        }
+        .right{
+            margin: 0px;
+            transform: rotate(0deg);
+            p{
+                font-size: 48px;
+            }
+        }
+    }
+
+    @include xs{
+        display: flex;
+        flex-direction: column-reverse;
+        .left{
+            margin: 0px;
+            gap: 16px;
+            .project-window{
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+
+                height: fit-content;
+                .window-left{
+                    
+                    img{
+                        scale: 0.9;
+                        &:hover{
+                            scale: 0.92;
+                        }
+                        &:nth-child(2){
+                            display: none;
+                        }
+                    }
+                }
+
+                .window-right{
+                    flex: auto;
+                    gap: 16px;
+
+                    .desc{
+                        margin-top: 12px;
+                        margin-left: 24px;
+                        gap: 12px;
+                    }
+                }
+            }
+        }
+        .right{
+            margin: 0px;
+            transform: rotate(0deg);
+            padding: 16px;
+            width: 272px;
+            p{
+                font-size: 36px;
+            }
+        }
     }
 
 }
