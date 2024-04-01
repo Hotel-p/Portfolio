@@ -4,7 +4,6 @@ import '../../fonts.scss';
 import developer from '../../assets/developer.svg'
 import pdf from '../../assets/Prasanna-Eklahare-Resume.pdf';
 
-
 function About() {
     return (
         <div className="about teko-light">
@@ -18,6 +17,7 @@ function About() {
                 </p>
                 <p>
                     Please feel free to drop a message in the message box below, if you'd like to collaborate with me!
+                    Or, Send a mail at: <span id='myMail'>peklahare@gmail.com</span>
                 </p>
                 <a href={pdf}>View Resume</a>
             </div>

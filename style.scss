@@ -1,0 +1,9 @@
+@import './src/responsive.scss';
+
+:root{
+    --toastify-text-color-light: black !important;
+    
+    @include xs{
+        
+    }
+}

@@ -50,6 +50,10 @@ function Projects() {
                                 ))
                             }
                         </ul>
+
+                        {
+                            ProjectData.link && <a href={ProjectData.link} className='siteLink'>Click here to visit!</a>
+                        }
                     </div>
                 </div>
                 

@@ -15,6 +15,7 @@ import { SiKubernetes } from "react-icons/si";
 import { FaLinux } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa6";
 import { SiPowerbi } from "react-icons/si";
+import { GiArtificialIntelligence } from "react-icons/gi";
 
 
 function Skills() {
@@ -43,7 +44,7 @@ function Skills() {
                     <div className='title teko-bold'>DevOps</div>
                     <div className='skill-grid'>
                         <div className='skill-grid-item'><p>Docker</p> <div className='skill-grid-item-img'><FaDocker /></div></div>
-                        <div className='skill-grid-item'><p>Jenkins</p> <div className='skill-grid-item-img'><FaJenkins color='red'/></div></div>
+                        <div className='skill-grid-item'><p>Jenkins</p> <div className='skill-grid-item-img'><FaJenkins color='black'/></div></div>
                         <div className='skill-grid-item'><p>Kubernetes</p> <div className='skill-grid-item-img'><SiKubernetes /></div></div>
                         <div className='skill-grid-item'><p>Linux</p> <div className='skill-grid-item-img'></div><FaLinux /></div>
                     </div>
@@ -55,6 +56,7 @@ function Skills() {
                         <div className='skill-grid-item'><p>Git</p> <div className='skill-grid-item-img'><FaGitAlt /></div></div>
                         <div className='skill-grid-item'><p>PowerBI</p> <div className='skill-grid-item-img'><SiPowerbi /></div></div>
                         <div className='skill-grid-item'><p>Java</p> <div className='skill-grid-item-img'><FaJava /></div></div>
+                        <div className='skill-grid-item'><p>Machine Learning</p> <div className='skill-grid-item-img'><GiArtificialIntelligence /></div></div>
                     </div>
                 </div>
                 

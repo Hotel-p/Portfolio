@@ -23,10 +23,9 @@ function Navbar() {
                 <a className='options git' href='https://github.com/Hotel-p'>
                     <SiGithub />
                 </a>
-                <div className='options darkmode'>
-                    {/* <CiLight /> */}
+                {/* <div className='options darkmode'>
                     <MdDarkMode />
-                </div>
+                </div> */}
             </div>
         </div>
     );

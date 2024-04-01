@@ -11,7 +11,6 @@ function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        notify("Message Sent!");
         // emailjs
         // .sendForm('service', 'template', form.current, {
         //     publicKey: 'il0Bv6A_4zRXm9opU',
@@ -27,9 +26,19 @@ function Contact() {
         //     },
         // );
     };
-
     
-    const notify = (input) => toast(input);
+    const notify = () => toast("Message Sent!");
+
+    // const default_vals = {
+    //     "background-color"  :   "#00F",
+    //     "border"            :   "5px dashed #F00",
+    //     "color"             :   "#0F0",
+    //     "font-family"       :   "Helvitica",
+    //     "font-size"         :   "30px",
+    //     "toast-pos"         :   "top"
+    // };
+    // set_default(default_vals);
+    // toast("This is the new default Toast.");
 
     return (
         <div className='contact'>
@@ -50,7 +59,7 @@ function Contact() {
                     <label htmlFor="message">Message:</label>
                     <textarea id="message" name="message" placeholder='Type your message here..' required></textarea>
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" onClick={notify}>Submit</button>
                 <ToastContainer
                     position="bottom-right"
                     autoClose={5000}
@@ -62,6 +71,7 @@ function Contact() {
                     draggable={false}
                     pauseOnHover
                     theme="light"
+                    backgroundColor= "black"
                     transition: Bounce
                 />
             </form>

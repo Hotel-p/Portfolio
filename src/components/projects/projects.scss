@@ -56,6 +56,8 @@
                     height: 256px;
                     width: 100%;
                     border: 1px solid black;
+                    
+                    object-fit: cover;
 
                     &:hover{
                         scale: 1.05;
@@ -112,6 +114,17 @@
 
                 ul{
                     list-style: upper-roman;
+                }
+
+                .siteLink{
+                    border: 1px solid black;
+                    padding: 8px;
+                    &:hover{
+                        background-color: black;
+                        color: white;
+                        scale: 1.02;
+                        transition: 0.2s;
+                    }
                 }
 
                 @include md{
@@ -203,8 +216,9 @@
         .right{
             margin: 0px;
             transform: rotate(0deg);
+            padding: 16px;
             p{
-                font-size: 48px;
+                font-size: 32px;
             }
         }
     }
