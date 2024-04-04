@@ -11,11 +11,11 @@ function Projects() {
     let ProjectData = ProjectDa[num];
 
     const nextClick = ()=>{
-        setNum((prev) => prev === 4 ? 0 : prev + 1);
+        setNum((prev) => prev === 5 ? 0 : prev + 1);
     }
 
     const backClick = () => {
-        setNum((prev) => prev === 0 ? 4 : prev - 1);
+        setNum((prev) => prev === 0 ? 5 : prev - 1);
     }
     
     return (

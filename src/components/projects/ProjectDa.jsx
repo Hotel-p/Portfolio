@@ -43,6 +43,14 @@ const ProjectDa = [
         desc: ["A real estate website which allows listing properties for buying or renting.",
                "Includes implementation of JWT authentication and chatting feature along with other requirements"] // Array of project descriptions
     },
+    {
+        title: "Library Website",
+        image: [developer,developer], // Path to the image file
+        tech: ["React", "Node", "Express", "MongoDB"], // Array of technologies used
+        desc: ["A simple full-stack web application for maintaining a list of books, with CRUD operations included",
+               "Visit Site to know more!"], // Array of project descriptions
+        link: ["https://bookstore-frontend-j282.onrender.com/"]
+    },
 ];
 
 export default ProjectDa;
