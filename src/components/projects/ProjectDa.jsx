@@ -4,6 +4,10 @@ import cvimg1 from '../../assets/cv-maker-img1.png';
 import cvimg2 from '../../assets/cv-maker-img2.png';
 import etchasketch1 from '../../assets/etchasketch-img1.png';
 import etchasketch2 from '../../assets/etchasketch-img2.png';
+import bookstoreimg1 from '../../assets/bookstore-img1.png';
+import bookstoreimg2 from '../../assets/bookstore-img2.png';
+import estateimg1 from '../../assets/estate-img1.png';
+import estateimg2 from '../../assets/estate-img2.png';
 
 const ProjectDa = [
     {
@@ -38,14 +42,15 @@ const ProjectDa = [
     },
     {
         title: "Real Estate Website",
-        image: [developer,developer], // Path to the image file
+        image: [estateimg1,estateimg2], // Path to the image file
         tech: ["React", "Node", "Express", "MongoDB"], // Array of technologies used
         desc: ["A real estate website which allows listing properties for buying or renting.",
-               "Includes implementation of JWT authentication and chatting feature along with other requirements"] // Array of project descriptions
+               "Includes implementation of JWT authentication and other requirements"], // Array of project descriptions
+        link: ["https://mern-estate-291n.onrender.com/"]
     },
     {
         title: "Library Website",
-        image: [developer,developer], // Path to the image file
+        image: [bookstoreimg1,bookstoreimg2], // Path to the image file
         tech: ["React", "Node", "Express", "MongoDB"], // Array of technologies used
         desc: ["A simple full-stack web application for maintaining a list of books, with CRUD operations included",
                "Visit Site to know more!"], // Array of project descriptions
