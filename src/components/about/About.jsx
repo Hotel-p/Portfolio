@@ -2,7 +2,7 @@ import './about.scss';
 import '../../fonts.scss';
 
 import developer from '../../assets/developer.svg'
-import pdf from '../../assets/Prasanna-Eklahare-Resume-2.pdf';
+import pdf from '../../assets/Prasanna-Eklahare-Resume.pdf';
 
 function About() {
     return (
